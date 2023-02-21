@@ -1,16 +1,20 @@
 # etherParser
 Parse contract details by etherscan link.
-
+<br>
+<br>
 import { eParse } from "./eParse.js"
-const contract_link = "https://goerli.etherscan.io/address/0xE3c438a87c3d3aBE58316fF7c3D345eFD9dE0462";
+<br>
+<br>
+const contract_link = "https://goerli.etherscan.io/address/0xE3c438a87c3d3aBE58316fF7c3D345eFD9dE0462";<br>
+<br>
 //CONTRACT SHOULD BE VERIFIED!
 
 const etherObj = eParse(contract_link);
 
 
-etherObj contains:
-    - address : Address of contract
-    - abi : ABI of contract
-    - provider
-    - contract - UNSIGNED contract
-    - contractS -SIGNED contract (coming soon)
+etherObj contains:<br>
+    - address : Address of contract<br>
+    - abi : ABI of contract<br>
+    - provider<br>
+    - contract - UNSIGNED contract<br><br>
+    - contractS -SIGNED contract (coming soon)<br>
