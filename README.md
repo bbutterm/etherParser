@@ -9,8 +9,7 @@ const contract_link = "https://goerli.etherscan.io/address/0xE3c438a87c3d3aBE583
 <br>
 //CONTRACT SHOULD BE VERIFIED!
 
-const etherObj = eParse(contract_link); <br>
-etherObj.contract.isTrue().then(result=>console.log(result)) //=> true <br>
+const etherObj = eParse(contract_link)<br>.then(a => { a.contract.isTrue()<br>.then(bool => { console.log(bool) }) }); // "true"
 
 etherObj contains:<br>
     - address : Address of contract<br>
