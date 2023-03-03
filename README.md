@@ -16,4 +16,12 @@ etherObj contains:<br>
     - abi : ABI of contract<br>
     - provider<br>
     - contract - UNSIGNED contract<br><br>
-    - contractS -SIGNED contract (coming soon)<br>
+    - contractS -SIGNED contract <br>
+    
+<br>
+You also can use react hook "useEthers"
+<br>
+import {useEthers} from "./useEthers";<br>
+const contract_link = "https://goerli.etherscan.io/address/0xE3c438a87c3d3aBE58316fF7c3D345eFD9dE0462";<br>
+const [contract,signedContract] = useEthers(link);<br>
+Now your contract have all methods, and signed contract also have you sign, that allows to store blockain operations
