@@ -16,7 +16,7 @@ etherObj contains:<br>
     - abi : ABI of contract<br>
     - provider<br>
     - contract - UNSIGNED contract<br><br>
-    - contractS -SIGNED contract (coming soon)<br>
+    - contractS -SIGNED contract <br>
     
 <br>
 You also can use react hook "useEthers"
