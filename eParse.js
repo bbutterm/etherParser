@@ -27,7 +27,8 @@ function getAddress(link) {
 }
 async function getAbi(address) {
     const response = await axios.get("https://api-goerli.etherscan.io/api?module=contract&action=getabi&address=" + address);
-    let abi = response.data.result;
+    let abi = response.data.result
+
     return abi;
 }
 async function getSingedContract() {
@@ -47,7 +48,7 @@ async function getSingedContract() {
     return contractS;
 }
 
-export const eParse = async (link) => {
+const eParse = async (link) => {
     let chain = getChain(link);
     let address = getAddress(link);
     let abi = await getAbi(address);
@@ -60,3 +61,4 @@ export const eParse = async (link) => {
 }
 
 
+export default eParse;

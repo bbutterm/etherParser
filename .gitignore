@@ -9,7 +9,7 @@ typechain-types
 cache
 artifacts
 
-
+testing
 node_modules
 .env
 coverage
